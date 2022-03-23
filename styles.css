@@ -1,4 +1,10 @@
-@import "base.css";
+@import "./base.css";
 @import "./components/header.css";
 @import "./components/card.css";
+@import "./components/frame.css";
 @import "./components/footer.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* not working */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet");

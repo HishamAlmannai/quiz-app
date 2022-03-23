@@ -1,21 +1,15 @@
-.card {
+.frame {
   background-color: bisque;
+  min-height: 20rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   margin: 1rem;
   padding: 1rem;
-  position: relative;
 }
 
 .card__list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-
-.bookmark {
-  position: absolute;
-  right: 1rem;
-  top: -1rem;
 }
