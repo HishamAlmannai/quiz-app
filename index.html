@@ -1,37 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Quiz App</h1>
-    </header>
-    <main>
-        <article>
-            <h2>Question</h2>
-            <section>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ab quam libero magni laudantium quia aperiam voluptatibus dolorum laboriosam sed? Quae obcaecati eveniet, ad corporis repellat nisi earum et fuga.
-                </p>
-            </section>
-            <button>Show Answer</button>
-            <section>
-                <ul>
-                    <li>#asdf</li>
-                    <li>#lorem</li>
-                    <li>#code</li>
-                    <li>#uhrzeit</li>
-                </ul>
-            </section>
-        </article>
-    </main>
-    <footer>
 
-    </footer>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <h1>Quiz App</h1>
+  </header>
+  <main>
+    <article class="card">
+      <h2>Question</h2>
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ab
+          quam libero magni laudantium quia aperiam voluptatibus dolorum
+          laboriosam sed? Quae obcaecati eveniet, ad corporis repellat nisi
+          earum et fuga.
+        </p>
+      </section>
+      <button data-js="showAnswerButton">Show Answer</button>
+      <button data-js="hideAnswerButton" class="hide__Answer">Hide Answer</button>
+      <section data-js="hideAnswerSection" class="hide__Answer">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae tempore laborum, omnis debitis dicta nihil
+          eveniet! Placeat minima sapiente et obcaecati nesciunt ipsa voluptates non quasi fuga, voluptatibus neque
+          incidunt.</p>
+      </section>
+
+      <section>
+        <ul class="card__list">
+          <li class="card__list-item">#asdf</li>
+          <li class="card__list-item">#lorem</li>
+          <li class="card__list-item">#code</li>
+          <li class="card__list-item">#uhrzeit</li>
+        </ul>
+      </section>
+      <button class="bookmark button__bookmark" data-js="button__bookmark">
+        <svg class="icon__medium" data-js="bookmark_false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+          fill="#000000">
+          <path d="M0 0h24v24H0V0z" fill="none" />
+          <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z" />
+        </svg>
+        <svg class="icon__medium svg_hide" data-js="bookmark_true" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24" fill="#000000">
+          <path d="M0 0h24v24H0V0z" fill="none" />
+          <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
+        </svg>
+        </svg>
+      </button>
+      <span class="material-icons-outlined">bookmark</span>
+    </article>
+
+    <article class="card">
+      <h2>Question</h2>
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ab
+          quam libero magni laudantium quia aperiam voluptatibus dolorum
+          laboriosam sed? Quae obcaecati eveniet, ad corporis repellat nisi
+          earum et fuga.
+        </p>
+      </section>
+      <button>Show Answer</button>
+      <section>
+        <ul class="card__list">
+          <li>#asdf</li>
+          <li>#lorem</li>
+          <li>#code</li>
+          <li>#uhrzeit</li>
+        </ul>
+      </section>
+      <span class="insert">
+
+      </span>
+    </article>
+
+    <article class="card">
+      <h2>Question</h2>
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ab
+          quam libero magni laudantium quia aperiam voluptatibus dolorum
+          laboriosam sed? Quae obcaecati eveniet, ad corporis repellat nisi
+          earum et fuga.
+        </p>
+      </section>
+      <button>Show Answer</button>
+      <section>
+        <ul class="card__list">
+          <li class="card__list-item">#asdf</li>
+          <li class="card__list-item">#lorem</li>
+          <li class="card__list-item">#code</li>
+          <li class="card__list-item">#uhrzeit</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <nav class="footer">
+      <a class="icon__medium" href=""><img src="" alt="" />Home</a>
+      <a class="icon__medium" href=""><img src="" alt="" />Bookmark</a>
+      <a class="icon__medium" href=""><img src="" alt="" />create</a>
+      <a class="icon__medium" href=""><img src="" alt="" />profile</a>
+    </nav>
+  </footer>
+  <script src="./index.js" defer></script>
 </body>
+
 </html>
