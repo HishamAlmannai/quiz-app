@@ -4,6 +4,20 @@
   margin: 0;
 }
 
+:root {
+  --bookmark-empty: ;
+}
+
+html {
+  font-family: "Palette Mosaic", cursive;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-family: "Palette Mosaic", cursive;
+}
+
 body {
   background-color: aqua;
   display: grid;
@@ -48,4 +62,21 @@ textarea {
 
 svg {
   width: 50px;
+}
+
+button {
+  max-width: 15rem;
+  margin: 1rem;
+  padding: 0.25rem 1rem;
+  align-self: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  body {
+    width: 600px;
+  }
 }

@@ -3,8 +3,8 @@
 @import "./components/card.css";
 @import "./components/frame.css";
 @import "./components/footer.css";
+@import "./components/profile.css";
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
+@import url(https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap);
 /* not working */
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");

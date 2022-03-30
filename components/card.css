@@ -10,12 +10,56 @@
 
 .card__list {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
+  gap: 2rem;
 }
 
+.card__list-item {
+  background-color: aliceblue;
+  border: 2px solid grey;
+  border-radius: 2px;
+}
 .bookmark {
   position: absolute;
-  right: 1rem;
-  top: -1rem;
+  right: 0rem;
+  top: -2rem;
+}
+
+.button__bookmark {
+  background-color: transparent;
+  border: none;
+}
+
+.svg_hide {
+  display: none;
+}
+
+.hide__Answer {
+  display: none;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
 }
