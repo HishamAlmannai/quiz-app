@@ -1,34 +1,22 @@
-console.clear();
+import Footer from "./components/footer/footer.js";
+import Card from "./components/card/card.js";
+import Card from "./components/card/create.js";
+import Card from "./components/card/profile.js";
 
-const buttonB = document.querySelector('[data-js="button__bookmark"]');
-const bookmarkT = document.querySelector('[data-js="bookmark_true"]');
-const bookmarkF = document.querySelector('[data-js="bookmark_false"]');
+const navButtonS = document.querySelectorAll('[data-js="buttonNav"]');
+const maiN = document.querySelectorAll('main');
 
-console.log("iregenaers");
+maiN.forEach((pagE) => {
+  console.log(pagE.currentValue + ', ' + currentIndex);
+  Card(pagE);
+} );
 
-buttonB.addEventListener("click", () => {
-  bookmarkT.classList.toggle("svg_hide");
-  bookmarkF.classList.toggle("svg_hide");
-  console.log("test")
-  })
+navButtonS.forEach((navButton) => {
+  Footer(navButton);
+});
 
+const cardS = document.querySelectorAll('[data-js="card"]');
 
-
-
-const buttonA = document.querySelector('[data-js="showAnswerButton"]');
-const buttonH = document.querySelector('[data-js="hideAnswerButton"]');
-const sectionH = document.querySelector('[data-js="hideAnswerSection"]')
-
-function AnswerT(){
-    buttonA.classList.toggle("hide__Answer");
-    buttonH.classList.toggle("hide__Answer");
-    sectionH.classList.toggle("hide__Answer");
-}
-
-buttonA.addEventListener("click", () => {
- AnswerT();
-  });
-
-buttonH.addEventListener("click", () => {
-    AnswerT();
-    })
+cardS.forEach((carD) => {
+  Card(carD);
+});
