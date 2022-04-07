@@ -9,18 +9,20 @@
 }
 
 html {
-  font-family: "Palette Mosaic", cursive;
+  font-family: 'Palette Mosaic', cursive;
   display: flex;
   justify-content: center;
 }
 
-
 body {
   background-color: aqua;
   display: grid;
-  grid-template-rows: 3rem 1fr 3rem;
-  height: 100vh;
+  grid-template-rows: auto 1fr auto;
   position: relative;
+}
+
+page {
+  height: 100vh;
 }
 
 header {
@@ -37,6 +39,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 80vh;
 }
 
 footer {
@@ -49,7 +52,7 @@ footer {
 }
 
 button {
-  font-family: "Palette Mosaic", cursive;
+  font-family: 'Palette Mosaic', cursive;
 }
 
 h1 {
@@ -61,8 +64,6 @@ h1 {
 ul {
   list-style-type: none;
 }
-
-
 
 svg {
   width: 50px;
@@ -89,7 +90,6 @@ a {
   display: none;
 }
 
-
 .icon__medium {
-  height: 20px;
+  height: 50px;
 }

@@ -1,13 +1,11 @@
-@import "./base.css";
-@import "./components/footer/footer.css";
-@import "./components/card/card.css";
-@import "./components/profile/profile.css";
-@import "./components/profile/create.css";
+@import './base.css';
+@import './components/footer/footer.css';
+@import './components/card/card.css';
+@import './components/profile/profile.css';
+@import './components/create/create.css';
+@import './components/bookmark/bookmark.css';
 
 @import url(https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap);
 
-
-
-
 /* not working */
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
