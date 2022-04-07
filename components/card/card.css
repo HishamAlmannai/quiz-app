@@ -1,0 +1,75 @@
+.card {
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: 5px 05px 10px black;
+  z-index: 20;
+}
+
+.card__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card__list-item {
+  background-color: aliceblue;
+  border: 2px solid grey;
+  border-radius: 2px;
+}
+
+.hide__Answer {
+  display: none;
+}
+
+.AnswerButton {
+  border: none;
+  border-radius: 0.2rem;
+  box-shadow: 5px 5px 5px blue;
+}
+
+.AnswerButton:hover {
+  background-color: grey;
+}
+
+.AnswerButton:active {
+  animation-duration: 3s;
+  animation-name: pressButton;
+}
+
+@keyframes pressButton {
+  0% {
+  }
+  30% {
+    transition: 1rem 2rem;
+  }
+  68%,
+  72% {
+    transition: 5rem 5rem;
+  }
+  100% {
+    transition: 6rem 8rem;
+  }
+}
+
+.frame {
+  background-color: bisque;
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.card__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
